@@ -20,7 +20,7 @@ Precio de los helados:
 -Bombon helado marca helardo --------> $1.8
 -Potecito de helado con confites-----> $2.9
 -Pote de 1/4 KG ---------------------> $2.9
-
+*/
 let dineroRoberto = prompt("¿Cuantó dinero tienes Roberto?");
 let dineroPedro = prompt("¿Cuantó dinero tienes Pedro?");
 let dineroCofla = prompt("¿Cuantó dinero tienes Cofla?");
@@ -71,17 +71,9 @@ if (dineroCofla >= 0.6 && dineroCofla < 1) {
    alert("-Cofla Compra un Potecito de helado con confites o un Pote de 1/4 KG y te sobran $"+(dineroCofla-2.9).toFixed(2));
  } else {
    alert("Lo sentimos su dinero es insuficiente para adquirir un producto");
- }*/
+ }
  
-/*---------------------------------PROBLEMA B-----------------------------------------------
-Cofla se enoja con el heladero y decide dar su dinero a una persona sin hogar el cual
-decide comprar un boleto de lotería.ç
 
-1.Si le alcanza para uno, lo compra.
-2.Si le alcanza para dos, los compra.
-3.Si le alcanza para tres y sobra, regala el vuelto.
-4.Debe mostrar que compro y el vuelto
-*/
 
 /*---------------------------------PROBLEMA C-----------------------------------------------
 Cofla es sospechoso de un crimen por lo que es llevado a la comisaría para ser interrogado
