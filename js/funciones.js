@@ -99,11 +99,11 @@ esto este soucionado.
    está reprobado
 */
 //Solución
-/*
+
 let cantidad = prompt("¿Cuántos alumnos son?");
 let alumnosTotales = [];
 for (let i = 0; i < cantidad; i++) {
-  alumnosTotales[i] = [prompt("Nombre del alumno: " + (i+1)), 0];
+  alumnosTotales[i] = [prompt("Nombre del alumno " + (i + 1)) + ":", 0];
 }
 
 const tomarAsistencia = (nombre, posicion) => {
@@ -116,31 +116,29 @@ const tomarAsistencia = (nombre, posicion) => {
 for (let i = 0; i < 30; i++) {
   //30 por los 30 días
   for (let alumno in alumnosTotales) {
-    tomarAsistencia(alumnosTotales[alumno][0],alumno);
+    tomarAsistencia(alumnosTotales[alumno][0], alumno);
   }
 }
 for (let alumno in alumnosTotales) {
-    let resultado=`${alumnosTotales[alumno][0]} <br/>
+  let resultado = `${alumnosTotales[alumno][0]} <br/>
     ___________Asistencias: <b>${alumnosTotales[alumno][1]} </b><br/>
-    ___________Inasistencias: <b>${30-alumnosTotales[alumno][1]}</b><br/>`
-    ;
-    if (30-alumnosTotales[alumno][1]>18){
-        resultado += "<b style='color:red;'>Reprobado por Inasistencias</b><br/><br/>";
-    }
-    else{
-        resultado+="<b style='color:green;'>Aprobado</b><br/><br/>";
-    }
-    document.write(resultado);
-}*/
+    ___________Inasistencias: <b>${30 - alumnosTotales[alumno][1]}</b><br/>`;
+  if (30 - alumnosTotales[alumno][1] > 18) {
+    resultado +=
+      "<b style='color:red;'>Reprobado por Inasistencias</b><br/><br/>";
+  } else {
+    resultado += "<b style='color:green;'>Aprobado</b><br/><br/>";
+  }
+  document.write(resultado);
+}
 
-/*
 /*---------------------------------PROBLEMA C------------------------------------------------
 C) Cofla feliz por haber empezado las clases volvió a su casa y ya tiene tarea básica de 
 cálculo; tiene que hacer un par de ejercicios de matemáticas que incluyen suma, resta,
 multiplicación y división, realizar esto con una calculadora puede ser mucho más efectivo.
 
 1. Crear una calculadora que nos simplifique el trabajo
-*/
+
 const sumar = (n1, n2) => {
   return (parseFloat(n1) + parseFloat(n2)).toFixed(2);
 };
@@ -177,3 +175,4 @@ else if(operacion=="4"){
 else{
     alert("!Uy parece que has seleccionado una opción invalidad...¡");
 }
+*/
